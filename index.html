@@ -125,6 +125,29 @@
                       </div>
                 </div>
             </div>
+            <div class="secondary eight">
+                <p></p>
+                <p>1.</p>
+                <img src="./first.JPG" >
+                <p>2.</p>
+                <img src="./second.JPG">
+            </div>
+            <div class="secondary seven">
+                <input type="email" placeholder="email" id="too" required class="btn btn-light col-6 m-auto">  
+                <input type="text" placeholder="adresse" required id="adresse" class="btn btn-light col-11 m-auto"> 
+                <input type="number" required id="number" placeholder="combien de copies" class="btn btn-light col-2 m-auto">
+                <input type="tel" required id="phonenumber" class="btn btn-light col-4 m-auto" placeholder="numero de telephone">
+                <input type="button" id="hi" class="btn btn-outline-light col-3 m-auto" onclick="newDoc()" value="go to gmail">
+                <script >
+                    function newDoc() {
+                        var l=document.getElementById("too").value;
+                        var adr=document.getElementById("adresse").value;
+                        var num=document.getElementById("number").value;
+                        var phnum=document.getElementById("phonenumber").value;
+                        window.location.assign("https://mail.google.com/mail/?view=cm&fs=1&to="+l+`&body=location:${adr}, number: ${num}, phone_number: ${phnum} &su=book order`);
+                    }
+                </script>
+            </div>
 
         </div>
 
