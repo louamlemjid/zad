@@ -145,7 +145,7 @@
                         var adr=document.getElementById("adresse").value;
                         var num=document.getElementById("number").value;
                         var phnum=document.getElementById("phonenumber").value;
-                        window.location.assign("https://mail.google.com/mail/?view=cm&fs=1&to="+l+`&body=location:${adr}, number: ${num}, phone_number: ${phnum} &su=book order`);
+                        location.href="mailto:"+l+`&body=location:${adr}, number: ${num}, phone_number: ${phnum} &subject=book order`;
                     }
                 </script>
             </div>
