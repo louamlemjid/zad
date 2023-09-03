@@ -112,3 +112,13 @@ footer{
     .two>h1{font-size: 40px;}
 }
 h3{margin: 5%;}
+.seven{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+    padding: 10px;
+}
+.eight img{
+    width: 350px;
+}
